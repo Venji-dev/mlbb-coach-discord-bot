@@ -34,7 +34,7 @@ class VisitaRolesCounter(discord.ui.View):
         self.usuario = usuario_original
     
     # Modificador de respuesta generico para botones
-    async def procesar_carril(self, interaction: discord.Imteraction, indice_columna, nombre_carril):
+    async def procesar_carril(self, interaction: discord.Interaction, indice_columna, nombre_carril):
         # Validar que solo respónda a quien uso el comando
         if interaction.user != self.usuario:
             await interaction.response.send_message("¡Este menú no es tuyo!", ephemeral=True)
